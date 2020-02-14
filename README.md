@@ -11,14 +11,14 @@ Research
 1. What are loaders and how do we implement loaders?
 	**The Loader API loads data from Content Providers (or other data sources) and transfers it to fragments and fragmentActivities.**
 	
-	**In order to implement a loader, you will need the following:
-		a FragmentActivity or a Fragment
-		an instance of LoaderManager
-		A CursorLoader to load data with a ContentProvider.
-		An implementation for LoaderManager.LoaderCallbacks.
-		A way to show the loader data, using SimpleCursorAdapter
-		A data source, like ContentProvider
-	Use the activity's onCreate() method to initialize a Loader using the initLoader() method, filled with a unique ID, optional arguments (or null), a LoaderManager.LoaderCallbacks implementation, represented by a " this ".**
+	**In order to implement a loader, you will need the following:**
+		**a FragmentActivity or a Fragment**
+		**an instance of LoaderManager**
+		**A CursorLoader to load data with a ContentProvider.**
+		**An implementation for LoaderManager.LoaderCallbacks.**
+		**A way to show the loader data, using SimpleCursorAdapter**
+		**A data source, like ContentProvider**
+	**Use the activity's onCreate() method to initialize a Loader using the initLoader() method, filled with a unique ID, optional arguments (or null), a LoaderManager.LoaderCallbacks implementation, represented by a " this ".**
 
 2. What is an AsyncTaskLoader?
 	**An AsyncTaskLoader handles what AsyncTask does. It follows lifecycle changes of both fragments and activities.**
